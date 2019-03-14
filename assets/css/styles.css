@@ -335,8 +335,33 @@ input#searchZipcode{
     text-align: right;
 }
 
-/*Set Font Face Gotham*/
+/*Mobile Responsive*/
+@media (max-width: 1024px){
+    #helpBlock{
+        text-align: left;
+    }
+    #review-wrapper{
+        margin-top: 50px;
+    }
+    .footer-section, .accredited{
+        text-align: center;
+    }
+}
+@media (max-width: 768px){
+    .header-logo img{
+        width: 207px;
+        margin-top: 14px;
+    }
+    .tag-line{
+        margin-top: 37px;
+        font-size: 8px;
+    }
+    .check-items .desc{
+        font-size: 12px;
+    }
+}
 
+/*Set Font Face Gotham*/
 
 @font-face {
     font-family: 'Gotham';
