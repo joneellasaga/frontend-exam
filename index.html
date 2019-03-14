@@ -75,7 +75,7 @@
                         </div>
                         <div class="form-group">
                             <label id="labelCategory" for="category">Choose a category:</label>
-                            <select id="category" onchange="openCategoryModal()" placeholder="Click to choose a legal category" class="form-control">
+                            <select id="category" placeholder="Click to choose a legal category" class="form-control">
                                 <!--<option>Click to choose a legal category</option>-->
                                 <option value="" selected disabled>Click to choose a legal category</option>
                                 <option value="1">Family</option>
@@ -210,6 +210,136 @@
             </div>
         </div>
     </footer>
+
+    <!--Modal-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" id="content-category-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="step-3" class="modal-title">Which <b>Family</b> law issue(s) apply to your case?</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <form>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Adoption
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Guardianship
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Child Custody and Visitation
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Paternity
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Child Support
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Separations
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Divorce
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Spousal Support or Alimony
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-primary legal-button">Find A Lawyer Now</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="lawyerReview" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Client Reviews</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="profile-modal">
+                        <span class="img"><img src="assets/images/brigida.png" title="Brigida"/></span>
+                        <span class="name">Brigida R.</span>
+                        <span class="location">Dallas, TX</span>
+                    </div>
+                    <h3 class="profile-rating-header">Rating</h3><span class="users"> (29 users) </span><span class="star-rating-modal"><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star"></i></span>
+                    <hr/>
+                    <div class="overall">
+                        <p class="desc"><b>Overall</b></p>
+                        <p class="rating"><span class="rating-desc">Responded in a timely manner</span><span class="right overall-star star-rating-modal"><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i></span></p>
+                        <p class="rating"><span class="rating-desc">Answer questions clearly</span><span class="right overall-star star-rating-modal"><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i></span></p>
+                        <p class="rating"><span class="rating-desc">Understood needs</span><span class="right overall-star star-rating-modal"><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star"></i></span></p>
+                        <p class="rating"><span class="rating-desc">Would hire again</span><span class="right overall-star star-rating-modal"><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i></span></p>
+                        <p class="rating"><span class="rating-desc">Would recommend to a friend</span><span class="right overall-star star-rating-modal"><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star"></i></span></p>
+                    </div>
+                    <hr/>
+                    <div class="testimonial">
+                        <p><span class="star-rating-modal"><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i><i class="fa fa-star starred"></i></span> by <b>Dexter Marcial, 06/10/2016</b></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet placerat condimentum...</p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default right" data-dismiss="modal">Close</button>
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Native Bootstrap Core JavaScript -->
+    <script src="bootstrap/js/bootstrap-native.js"></script>
 
     <!--Custom JS-->
     <script src="assets/js/custom.js" type="text/javascript"></script>
