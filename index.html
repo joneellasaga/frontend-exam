@@ -17,8 +17,203 @@
     <!-- Fontawesome -->
     <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
 </head>
 <body>
 
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="h-section">
+                        <div class="header-logo">
+                            <img src="assets/images/logo.png" title="LegalMatch" />
+                        </div>
+                        <div class="tag-line">
+                            <p>Find The Right Lawyer Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="list-block check-items">
+                        <li>
+                            <span><i class="fa fa-check"></i> <span class="desc">No fee to prevent your case</span></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-check"></i> <span class="desc">Choose from lawyers in your area</span></span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-check"></i> <span class="desc">A 100% confidential service</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro-container">
+
+        <!--Container-->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Find a Lawyer for your Legal Issue</h1>
+                        <h2>Fast, Free and Confidential</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <form id="search-lawyer">
+                        <div class="form-group">
+                            <label id="labelZipcode" for="searchZipcode">Enter Zip Code or City:</label>
+                            <input type="text" class="form-control" id="searchZipcode" placeholder="Does not have to where you live">
+                        </div>
+                        <div class="form-group">
+                            <label id="labelCategory" for="category">Choose a category:</label>
+                            <select id="category" onchange="openCategoryModal()" placeholder="Click to choose a legal category" class="form-control">
+                                <!--<option>Click to choose a legal category</option>-->
+                                <option value="" selected disabled>Click to choose a legal category</option>
+                                <option value="1">Family</option>
+                                <option value="2">Criminal Defense</option>
+                                <option value="3">Business</option>
+                                <option value="4">Personal Injury</option>
+                                <option value="5">Bankruptcy & Finances</option>
+                                <option value="6">Product & Services</option>
+                                <option value="7">Employment</option>
+                                <option value="8">Real Estate</option>
+                                <option value="9">Immigration</option>
+                                <option value="10">Wills, Trusts & Estates</option>
+                                <option value="11">Government</option>
+                                <option value="12">Intellectual Property</option>
+                            </select>
+                        </div>
+                        <span id="helpBlock" class="help-block">Can't find your category? <a href="#">Click here.</a></span>
+                    </form  >
+
+                </div>
+                <div class="col-lg-5">
+                    <div id="review-wrapper">
+                        <div class="review-description">
+                            <h3>Client review LegalMatch lawyers</h3>
+                        </div>
+                        <div id="client-reviews">
+
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <div class="profile">
+                                        <span class="img"><img src="assets/images/mitchell.png" title="Mitchell"/></span>
+                                        <span class="name">Mitchell M.</span>
+                                        <span class="location">Cherry Hill, NJ</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="reviews">
+                                        <span class="review-title">Family Law <span class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></span>
+                                        <span class="review-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet placerat condimentum...</span>
+                                        <span class="review-more"><a class="read-review" href="#">Read Review <img src="assets/images/read-more.png" /></a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="profile">
+                                        <span class="img"><img src="assets/images/joel.png" title="Joel"/></span>
+                                        <span class="name">Joel C.</span>
+                                        <span class="location">Little Rock, AK</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="reviews">
+                                        <span class="review-title">Job & Employment Law <span class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></span>
+                                        <span class="review-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet placerat condimentum...</span>
+                                        <span class="review-more"><a class="read-review" href="#">Read Review <img src="assets/images/read-more.png" /></a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="profile">
+                                        <span class="img"><img src="assets/images/brigida.png" title="Brigida"/></span>
+                                        <span class="name">Brigida R.</span>
+                                        <span class="location">Dallas, TX</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="reviews">
+                                        <span class="review-title">Family Law <span class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></span>
+                                        <span class="review-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet placerat condimentum...</span>
+                                        <span class="review-more"><a class="read-review" href="#">Read Review <img src="assets/images/read-more.png" /></a></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End container -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-section">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo.png" title="LegalMatch" />
+                            </div>
+                            <div class="footer-tag">
+                                <p>Find The Right Lawyer Now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-credits">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">User Agreement</a>
+                                </li>
+                                <li class="footer-menu-divider">&sdot;</li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li class="footer-menu-divider">&sdot;</li>
+                                <li>
+                                    <a href="">Site Map</a>
+                                </li>
+
+                            </ul>
+                            <p class="copyright text-muted small">Copyright 1999-2016 Legal Match. All rights reserved. LegalMatch &reg;,</p>
+                            <p class="copyright text-muted small">the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="accredited">
+                            <img src="assets/images/accredited.jpg" />
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Custom JS-->
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+
 </body>
+
 </html>
