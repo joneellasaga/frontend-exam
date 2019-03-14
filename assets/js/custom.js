@@ -26,6 +26,15 @@ for( var i = 0; i < readReview.length; i++ ){
         lawyerModalInitJS.show();
     }, false);
 }
+//Find Lawyer Modal
+//Read review
+var findCategory = document.getElementById('find-category-list');
+var modalCategory = document.getElementById('findCategory');
+var findCategoryModalInitJS = new Modal(modalCategory);
+
+findCategory.addEventListener('click', function (e) {
+    findCategoryModalInitJS.show();
+}, false);
 
 jQuery(document).ready(function($) {
 

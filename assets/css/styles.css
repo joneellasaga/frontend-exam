@@ -126,16 +126,16 @@ span.location {
     color: #fbd243;
 
 }
-#lawyerReview .modal-content{
+#lawyerReview .modal-content, #findCategory .modal-content{
     padding: 10px 30px;
 }
-#lawyerReview .modal-body{
+#lawyerReview .modal-body, #findCategory .modal-body{
     padding: 25px 0;
 }
-#lawyerReview .modal-header{
+#lawyerReview .modal-header, #findCategory .modal-header{
     padding: 15px 0;
 }
-#lawyerReview .modal-title{
+#lawyerReview .modal-title, #step-4{
     text-transform: uppercase;
     padding-left: 0;
     font-size: 20px;
@@ -153,8 +153,15 @@ ul.lawyer-info li {
 .lawyer-info .name{
     font-size: 22px;
 }
-.lawyer-info .location{
+.lawyer-info .location, .sub-header{
     color: #adadad;
+}
+.cat-list{
+    padding-left: 0;
+}
+.cat-list li{
+    list-style: none;
+    line-height: 1.75em;
 }
 
 /*Forms*/
