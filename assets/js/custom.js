@@ -1,4 +1,4 @@
-
+//Choose category---->
 // modal by ID
 var myModal = document.getElementById('myModal');
 
@@ -6,16 +6,26 @@ var myModal = document.getElementById('myModal');
 var categorySelect = document.getElementById('category');
 
 // init modal Function
-var modalInitJS = new Modal(myModal);
+var categoryModalInitJS = new Modal(myModal);
 
 // when we click btnModal, open the modal
 categorySelect.addEventListener('change', function(e){
-    modalInitJS.show();
+    categoryModalInitJS.show();
 }, false)
 
 // access to the initialization object from another application
 var findModalInitJS = myModal.Modal;
 
+//Read review
+var readReview = document.getElementsByClassName('read-review');
+var modalLawyerProfile = document.getElementById('lawyerReview');
+var lawyerModalInitJS = new Modal(modalLawyerProfile);
+
+for( var i = 0; i < readReview.length; i++ ){
+    readReview[i].addEventListener('click', function (e) {
+        lawyerModalInitJS.show();
+    }, false);
+}
 
 jQuery(document).ready(function($) {
 

@@ -126,6 +126,36 @@ span.location {
     color: #fbd243;
 
 }
+#lawyerReview .modal-content{
+    padding: 10px 30px;
+}
+#lawyerReview .modal-body{
+    padding: 25px 0;
+}
+#lawyerReview .modal-header{
+    padding: 15px 0;
+}
+#lawyerReview .modal-title{
+    text-transform: uppercase;
+    padding-left: 0;
+    font-size: 20px;
+}
+.profile-modal img{
+    margin-top: -55px;
+}
+.lawyer-info{
+    display: inline-block;
+    margin-left: -20px;
+}
+ul.lawyer-info li {
+    list-style: none;
+}
+.lawyer-info .name{
+    font-size: 22px;
+}
+.lawyer-info .location{
+    color: #adadad;
+}
 
 /*Forms*/
 select#category, input#searchZipcode{
